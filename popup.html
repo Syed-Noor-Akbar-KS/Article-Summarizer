@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Article Summarizer</h1>
+  <div class="container">
+  
+    <div>
+    
+    <h3 class="subtitle">Summarize your content in 500 words or less</h3>
+    <div class="input-section">
+      <textarea id="textInput" class="input-text" rows="10"  placeholder="Paste or type your content here..."></textarea>
+      <input type="file" id="fileInput" class="file-input" accept=".docx,.txt">
+      <label for="fileInput" class="custom-file-upload">Choose File</label>
+    </div>
+    <button id="summarizeBtn" class="summarize-btn">Summarize</button>
+  </div>
+    <div id="summary-main">
+      <h1 class="title_1">Summarize Text </h1>
+      <textarea id="summary" class="input-text_1" rows="10"  placeholder="Summary will be here...."></textarea>
+      <button id="copy" >Copy</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+  <script src="mammoth.browser.min.js"></script>
+</body>
+</html>
